@@ -65,6 +65,9 @@ p.
  * 
  *    ->> the .then registers these {fulfilment, rejection } handlers for your promise object.
  * 
+ *    --> .then is just the register -> it is not  like that the .then is executed only  when the promise is executed or rejected.
+ *        -> 
+ * 
  *  
  *   ******************Most important part about these function is that :  **********
  *      The scope  of these function are done at parsing phase but
