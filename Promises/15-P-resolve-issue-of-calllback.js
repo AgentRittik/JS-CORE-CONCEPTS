@@ -43,11 +43,14 @@ function download2(url){
     });
 }
 
-download2("ww.abcd.com")
-.then(function fulfilmentHandler(value){
+let x = download2("ww.abcd.com")
+x.then(function fulfilmentHandler1(value){
     console.log("content downlaoded is",value); // here we are not giving the control of callback to someone else.
 })
-
+// if we want to call promise 2 time then how to do that
+x.then(function fulfilmentHandler2(value){
+    console.log("content downlaoded is",value); // here we are not giving the control of callback to someone else.
+})
 /**
  *  the control of what should happen with your callback is with you.
  *  if they never call the callback that case you still know what happned ->because at that
